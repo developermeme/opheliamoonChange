@@ -1,0 +1,38 @@
+@import "../../../assets/scss/index.scss";
+
+.BouncingSpinner {
+  display: flex;
+  min-height: 400px;
+  justify-content: center;
+  align-items: center;
+  color: $primary-color-logo;
+
+  & > span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: currentColor;
+    border-radius: 100%;
+    animation: bouncingSpinnerAnimation 1.4s infinite ease-in-out both;
+
+    &:first-child {
+      animation-delay: -0.32s;
+    }
+
+    &:nth-child(2) {
+      animation-delay: -0.16s;
+    }
+  }
+}
+
+@keyframes bouncingSpinnerAnimation {
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+  }
+
+  40% {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,29 @@
+.ordersNotFoundCard-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding-bottom: 20px;
+}
+
+.ordersNotFoundCard-image {
+  width: 180px;
+  height: 165px;
+}
+
+.ordersNotFoundCard-header {
+  margin: 25px 87px 11px;
+  color: #282c3f;
+}
+
+.ordersNotFoundCard-text {
+  margin: 20px auto;
+  line-height: 1.5;
+  color: #696e79;
+  text-align: center;
+}
+
+.ordersNotFoundCard-button {
+  margin: 20px 0 0;
+  border-radius: 2px;
+}

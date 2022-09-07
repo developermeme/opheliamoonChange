@@ -1,0 +1,106 @@
+@import "../../../assets/scss/index.scss";
+
+.fs-chk-btn {
+  position: relative;
+  overflow: hidden;
+  min-height: 40px;
+  border: 0px;
+  background: transparent;
+  display: flex;
+  outline: none;
+  vertical-align: top;
+  padding: 10px 0px;
+  font-weight: 200;
+  width: 100%;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.fs-chk-name {
+  flex: 1 1 0%;
+  text-align: left;
+  max-width: 70%;
+  overflow-wrap: break-word;
+  line-height: 1.428rem;
+  font-size: 1rem;
+}
+
+.fs-checkbox {
+  height: 20px;
+  width: 20px;
+  margin: 4px;
+  border-radius: 4px;
+  border: 1.5px solid rgb(214, 217, 220);
+  background-color: rgb(235, 237, 238);
+  color: rgb(255, 255, 255);
+  font-size: 0px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  align-self: flex-start;
+}
+
+.fs-checkbox-checked {
+  background: $primary-color;
+  font-size: 0.8571rem;
+  box-shadow: none;
+  border: none;
+}
+
+.fs-rdo-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.fs-rdo-wrapper {
+  height: 40px;
+  border: 0;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.fs-rdo-name {
+  flex: 1;
+  text-align: left;
+  letter-spacing: 0.5px;
+  text-transform: lowercase;
+}
+
+.fs-rdo-name::first-letter {
+  text-transform: uppercase;
+}
+
+.fs-radio {
+  height: 20px;
+  width: 20px;
+  border: solid 1.5px #d6d9dc;
+  background-color: #ebedee;
+  border-radius: 50%;
+  margin: 2px;
+}
+
+.fs-radio-checked {
+  position: relative;
+}
+
+.fs-radio-checked:after {
+  content: "";
+  height: 75%;
+  width: 75%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: $primary-color;
+  position: absolute;
+}

@@ -1,0 +1,108 @@
+.opre-cards {
+  position: relative;
+  height: 91%;
+  // box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.15);
+  padding: 20px 10px 10px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.opre-card {
+  float: left;
+  width: 47.7875%;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.15);
+  margin-bottom: 4.425%;
+  text-align: center;
+}
+
+.opre-card:nth-child(odd) {
+  margin-right: 4.425%;
+}
+
+.opre-card-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  padding: 20px;
+}
+
+.opre-row {
+  color: black;
+  margin-bottom: 10px;
+}
+
+.opre-row span {
+  margin-left: 10px;
+}
+
+.opre-qrcode {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  margin-bottom: 30px;
+}
+
+.opre-logo-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  height: inherit;
+  padding: 40px;
+}
+
+.opre-card-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.weburl {
+  margin-top: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.weburl img {
+  margin-bottom: -5px;
+  //   margin-bottom: -20px;
+}
+
+.subs-btn {
+  margin: 5px auto 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .opre-cards {
+    box-shadow: none;
+  }
+
+  .opre-card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .opre-logo-wrapper {
+    padding: 0px;
+  }
+  .opre-card-wrapper {
+    padding: 20px 0px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .email-icon {
+    display: none;
+  }
+  .email-text {
+    margin-left: 0px !important;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .subs-btn {
+    min-width: 300px !important;
+  }
+}

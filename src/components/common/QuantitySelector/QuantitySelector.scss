@@ -1,0 +1,56 @@
+@import "../../../assets/scss/index.scss";
+
+.QuantitySelector {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #e7e7e7;
+  white-space: nowrap;
+}
+
+.QuantitySelector__Button {
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.customqty {
+  background-color: $primary-color;
+  color: white;
+}
+
+.QuantitySelector__Button {
+  padding: 6px 30px;
+}
+
+@media screen and (min-width: 641px) {
+  .QuantitySelector__Button {
+    padding: 6px 25px;
+  }
+}
+
+.QuantitySelector svg {
+  width: 10px;
+  height: 10px;
+  strokewidth: 1.5px;
+  vertical-align: -1px;
+}
+
+.QuantitySelector__CurrentQuantity {
+  display: inline-block;
+  width: 50px;
+  padding: 0;
+  text-align: center;
+  letter-spacing: normal;
+  background: 0 0;
+  border: none;
+}
+
+// @media screen and (min-width: 641px) {
+//   .QuantitySelector__CurrentQuantity {
+//     font-size: 14px;
+//   }
+// }

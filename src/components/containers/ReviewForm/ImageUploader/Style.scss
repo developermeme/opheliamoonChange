@@ -1,0 +1,27 @@
+.upload__image-wrapper {
+  .Uploader {
+    font-weight: 500;
+    font-size: 16px;
+    // line-height: 30px;
+    display: inline-block;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+    transition: ease 0.3s;
+    white-space: nowrap;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    margin-top: 20px;
+  }
+
+  .image-item {
+    margin-top: 30px;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.sort-popover[aria-hidden="false"] {
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.sort-popover {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  z-index: 10;
+  box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.15);
+  touch-action: manipulation;
+  transform: translateY(100%);
+  visibility: hidden;
+}
+
+@media screen and (min-width: 1008px) {
+  .sort-popover[aria-hidden="false"] {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media screen and (min-width: 1008px) {
+  .sort-popover {
+    top: 260px;
+    right: 0px;
+    width: auto;
+    bottom: auto;
+    left: auto;
+  }
+}
+
+@media screen and (min-width: 1008px) {
+  .sort-popover::before {
+    content: "";
+    position: absolute;
+    right: 40px;
+    height: 20px;
+    border-style: solid;
+  }
+}
+
+@media screen and (min-width: 1008px) {
+  .sort-popover::before {
+    bottom: 100%;
+    border-width: 0px 10px 10px 10px;
+    border-color: transparent transparent #fff transparent;
+    filter: drop-shadow(0 -2px 2px rgba(54, 54, 54, 0.2));
+  }
+}

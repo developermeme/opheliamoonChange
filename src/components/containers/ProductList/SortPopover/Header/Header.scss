@@ -1,0 +1,35 @@
+@import "../../../../../assets/scss/index.scss";
+
+.popover-head {
+  position: relative;
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(190, 182, 182, 0.4);
+  text-align: left;
+}
+
+.popover-close-button {
+  position: absolute;
+  right: 30px;
+  top: calc(50% - 7px);
+  line-height: 0;
+  @include button;
+}
+
+.popover-close-button svg {
+  stroke-width: 1.1px;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+.popover-title {
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+@media screen and (min-width: 1008px) {
+  .popover-head {
+    display: none;
+  }
+}

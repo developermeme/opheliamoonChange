@@ -1,0 +1,56 @@
+*,
+:after,
+:before {
+  box-sizing: border-box !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+body {
+  margin: 0;
+  background-color: #fff;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  // cursor: grab;
+}
+
+body::after {
+  content: "";
+  background-image: url(https://nazca.in/BGPATTERN.png);
+  background-size: contain;
+  background-position: center;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --font-size-12: 0.857143rem;
+  --font-size-13: 0.928571rem;
+  --font-size-20: 1.42857rem;
+  --font-size-24: 1.71429rem;
+  --base-gutter: 8px;
+}
+
+.opm-head {
+  font-family: "JosefinSansSemiBold";
+  font-size: var(--font-size-20);
+}

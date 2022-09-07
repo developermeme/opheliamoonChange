@@ -1,0 +1,35 @@
+.RatingContainer {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #d4d5d9;
+
+  .AvgRating__Wrapper {
+    margin-top: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .AvgRating__Index {
+      height: 58px;
+      font-size: 48px;
+      color: #282c3f;
+
+      .AvgRating__Icon {
+        display: inline-block;
+
+        svg {
+          width: 20px;
+          height: 20px;
+          fill: currentColor;
+          margin: 25px 0 0 10px;
+        }
+      }
+    }
+    .AvgRating__CountDesc {
+      margin-top: 12px;
+      font-size: 14px;
+      font-weight: 400;
+      color: #282c3f;
+    }
+  }
+}

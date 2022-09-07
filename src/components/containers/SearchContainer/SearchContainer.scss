@@ -1,0 +1,85 @@
+@import "../../../assets/scss/index.scss";
+
+.SearchPageHeader {
+  position: relative;
+  margin: 20px 0;
+  font-family: "JosefinSansRegular";
+}
+
+@media screen and (min-width: 641px) {
+  .SearchPageHeader {
+    margin: 50px 0;
+  }
+}
+
+.SectionHeader:not(:only-child) {
+  margin-bottom: 40px;
+}
+.WishListHeading {
+  text-align: center;
+  font-family: "JosefinSansSemiBold";
+  color: black;
+}
+
+@media screen and (min-width: 1008px) {
+  .SectionHeader:not(:only-child) {
+    margin-bottom: 70px;
+  }
+}
+
+.SearchCollectionInner {
+  margin-top: 24px;
+}
+
+@media screen and (min-width: 641px) {
+  .SearchCollectionInner {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 1008px) {
+  .SearchCollectionInner {
+    display: flex;
+  }
+  .CollectionInner__Products {
+    flex: 1 0 0;
+  }
+}
+
+.ProductItem {
+  text-align: center;
+  white-space: normal;
+  visibility: inherit;
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.ProductItem__Wrapper {
+  position: relative;
+}
+
+.ProductItem__ImageWrapper {
+  display: block;
+}
+
+.Product__price {
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.8px;
+  margin-top: 15px;
+  height: 44px;
+}
+
+.original__Price {
+  color: $primary-color;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.offer__Price {
+  letter-spacing: 0.8px;
+  display: inline-block;
+  color: $secondary-active-color;
+  text-decoration: line-through;
+  margin-left: 20px;
+}

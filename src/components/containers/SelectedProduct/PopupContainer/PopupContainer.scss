@@ -1,0 +1,148 @@
+@import "../../../../assets/scss/index.scss";
+
+.modal.template-detail {
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9010;
+  left: 0;
+}
+
+.modal:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.85);
+  z-index: 9000;
+}
+
+.modal.template-detail:before {
+  background: rgba(41, 42, 61, 0.9);
+}
+
+.close-wp {
+  width: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aab2cc;
+}
+
+.modal-wrapper {
+  position: relative;
+  overflow-y: auto;
+  overflow-x: visible;
+  width: 816px;
+  border-radius: 4px;
+  -webkit-box-shadow: 8px 8px 32px 0 #292a3d;
+  box-shadow: 8px 8px 32px 0 #292a3d;
+  max-height: calc(100% - 40px);
+  margin: 20px auto;
+  top: auto;
+  left: auto;
+  -webkit-transform: none;
+  transform: none;
+  display: block;
+  max-width: 94%;
+  background: #fff;
+  z-index: 9010;
+}
+
+.template-detail-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.template-detail-wrapper .container {
+  width: 100%;
+  max-width: 1368px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 1%;
+  padding: 0;
+}
+
+.modal-header {
+  color: $primary-color;
+  font-size: 32px;
+  margin-bottom: 40px;
+  border-bottom: 0.5px solid $secondary-color;
+}
+
+.modal-header {
+  position: relative;
+  padding: 16px;
+  display: flex;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.modal-header .title {
+  color: $primary-color;
+  letter-spacing: -0.86px;
+  padding-right: 10px;
+  margin: 0;
+  flex: 1;
+}
+
+.modal-content {
+  padding: 30px 16px;
+  border-top: 8px solid $secondary-color;
+}
+
+.modal-template-area {
+  position: relative;
+  display: block;
+  width: calc(100% + 32px);
+  max-height: 600px;
+  height: calc(100vh - 168px);
+  margin-left: -16px;
+  border-bottom: 1px solid #e6e9f1;
+}
+
+.form-all {
+  max-width: 752px;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  color: #2c3345;
+  background-image: none;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 8px;
+  border-image-source: linear-gradient(
+    to left,
+    $primary-color,
+    $primary-color-logo
+  );
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+
+ul.page-section {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin: 0;
+  padding: 38px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.form-line {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  padding: 12px 10px;
+  margin: 12px;
+  border-radius: 3px;
+  position: relative;
+  width: 100%;
+  transition: background-color 0.15s;
+}

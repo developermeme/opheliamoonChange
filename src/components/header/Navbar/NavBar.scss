@@ -1,0 +1,233 @@
+@import "../../../assets/scss/index.scss";
+
+.Nazca__Header--Section {
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  position: sticky;
+
+  .Header {
+    background: white;
+    color: black;
+    // box-shadow: 0 -1px #e7e7e7 inset;
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  .Header__Wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 18px;
+  }
+
+  .Header__FlexItem {
+    display: flex;
+  }
+
+  .Header__FlexItem--fill {
+    flex: 1 0 0;
+    align-items: center;
+
+    &:last-child {
+      justify-content: flex-end;
+    }
+  }
+
+  .Header__Logo {
+    position: relative;
+    margin-bottom: 0;
+
+    .Header__LogoLink,
+    .Header__LogoImage {
+      display: block;
+    }
+
+    .Header__LogoImage {
+      margin: 0 auto;
+      transition: opacity 0.3s ease-in-out;
+      height: 70px;
+
+      @media screen and (max-width: 640px) {
+        max-width: 110px;
+        height: 40px !important;
+      }
+    }
+  }
+
+  .Header__Icon {
+    display: inline-block;
+    line-height: 1;
+    transition: color 0.2s ease-in-out;
+
+    span {
+      display: block;
+    }
+
+    .Icon--nav {
+      height: 14px;
+      width: 20px;
+    }
+
+    .Icon--cart {
+      width: 17px;
+      height: 20px;
+    }
+
+    .Icon--search {
+      position: relative;
+      top: 1px;
+      width: 18px;
+      height: 17px;
+    }
+
+    & + .Header__Icon {
+      margin-left: 18px;
+    }
+  }
+
+  .Header__CartDot {
+    position: absolute;
+    top: 2px;
+    right: -6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: $text-dark;
+    box-shadow: 0 0 0 2px white;
+    transform: scale(0);
+    transition: all 0.3s ease-in-out;
+
+    &.is-visible {
+      transform: scale(1);
+    }
+  }
+
+  .Header__LinkSpacer {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    color: transparent;
+    pointer-events: none;
+    user-select: none;
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      opacity: 0;
+      transform: scale(0, 1);
+      transform-origin: left center;
+      border-bottom: 3px solid $primary-color-logo;
+      transition: transform 0.3s, opacity 0.3s;
+    }
+  }
+
+  .HorizontalList__Item {
+    &.is-expanded {
+      .Header__LinkSpacer::after {
+        opacity: 1;
+        transform: scale(1, 1);
+      }
+    }
+    &.is-active {
+      .Heading {
+        color: $primary-color-logo !important;
+      }
+    }
+  }
+
+  .DropdownMenu {
+
+    max-width: 400px;
+    max-height: calc(100vh - 200px);
+    overflow-y: auto!important;
+
+  .level-2{
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+
+    .Linklist--spacingLoose{
+      padding-top: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .Nazca__Header--Section {
+    .Header__Wrapper {
+      padding: 18px 30px;
+    }
+
+    .Header__LogoImage {
+      max-width: 100%;
+    }
+
+    .Header__Icon {
+      & + .Header__Icon {
+        margin-left: 25px;
+      }
+
+      .Icon--nav-desktop {
+        height: 17px;
+        width: 24px;
+      }
+
+      .Icon--cart-desktop {
+        height: 23px;
+        width: 19px;
+      }
+
+      .Icon--search-desktop {
+        position: relative;
+        top: 2px;
+        width: 21px;
+        height: 21px;
+      }
+
+      .Icon--account {
+        position: relative;
+        top: 2px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .Nazca__Header--Section {
+    .Header__Wrapper {
+      padding-bottom: 24px;
+    }
+
+    .Header__FlexItem {
+      margin-bottom: 40px;
+    }
+
+    .Header__MainNav {
+      margin-right: 45px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      width: 100%;
+      text-align: center;
+      background: linear-gradient(90deg,#e88e7e,#f9665e)!important;
+
+      .HorizontalList {
+        margin-left: 0;
+        margin-right: 0;
+
+        .Heading {
+          color: white;
+        }
+      }
+    }
+  }
+}

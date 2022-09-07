@@ -1,0 +1,24 @@
+.ImageHero {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.ImageHero__TextContent {
+  position: absolute;
+  padding: 0 24px;
+  margin-bottom: 0 !important;
+  top: 60%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  zoom: 2;
+}

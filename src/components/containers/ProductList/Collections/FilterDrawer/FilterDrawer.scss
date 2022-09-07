@@ -1,0 +1,191 @@
+@import "../../../../../assets/scss/index.scss";
+
+.f-drawer {
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1001;
+  position: fixed;
+  animation: 0.3s ease-in 0s 1 normal none running animation-bh0uul;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  top: initial;
+}
+
+.f-wrapper {
+  position: absolute;
+  inset: 0px;
+  background: rgb(255, 255, 255);
+}
+
+// Header
+
+.f-header {
+  height: 66px;
+  font-weight: 500;
+  font-size: 1.14rem;
+  display: flex;
+  margin: 0px;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.f-title {
+  line-height: 1;
+  text-transform: capitalize;
+  padding: 0px;
+  margin-left: 20px;
+  font-size: 1.4rem;
+  color: rgb(51, 51, 51);
+}
+
+.f-clear-all {
+  background: rgb(243, 240, 240);
+  border: 1px solid rgb(153, 153, 153);
+  font-size: 0.8rem;
+  outline: none;
+  font-weight: 500;
+  height: 32px;
+  position: absolute;
+  right: 16px;
+  padding: 0px 12px;
+  overflow: hidden;
+}
+
+.f-header::after {
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  left: 0px;
+  width: 100%;
+  height: 1px;
+  box-shadow: rgb(204, 204, 204) 0px 1px 0px 0px;
+}
+
+// Filter Actions
+
+.f-actions {
+  box-shadow: rgb(0, 0, 0.15) 0px 2px 3px 0px;
+  height: 80px;
+  padding: 16px 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+}
+
+.f-btn {
+  flex: 1 1 0%;
+  height: 48px;
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  outline: none;
+  font: 500 1.1rem;
+  text-transform: capitalize;
+  border: none;
+}
+
+.f-btn-close {
+  background: rgb(243, 240, 240);
+  color: rgb(0, 0, 0);
+  width: 23%;
+  margin-right: 8px;
+}
+
+.f-btn-apply {
+  width: calc(77% - 8px);
+}
+
+.f-btn-enabled {
+  background-color: $primary-color;
+  color: rgb(255, 255, 255);
+}
+
+// Filter Content
+
+.f-content {
+  height: 100% ;
+  display: flex;
+}
+
+.f-filters {
+  flex: 4 1 0%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  max-width: 34%;
+  overflow-y: auto;
+  background-color: rgb(249, 250, 250);
+}
+
+.f-shead {
+  position: relative;
+  overflow: hidden;
+  padding: 2px 15px;
+  border-width: 0px 0px 0px 4px;
+  border-top-style: initial;
+  border-right-style: initial;
+  border-bottom-style: initial;
+  border-top-color: initial;
+  border-right-color: initial;
+  border-bottom-color: initial;
+  border-image: initial;
+  min-height: 48px;
+  display: flex;
+  outline: none;
+  -webkit-box-align: center;
+  align-items: center;
+  text-align: left;
+  color: rgb(0, 0, 0);
+  border-left-style: solid;
+  border-left-color: $primary-color;
+  font-weight: 500;
+}
+
+.f-head {
+  position: relative;
+  overflow: hidden;
+  padding: 2px 15px;
+  border: 0px;
+  color: rgb(0, 0, 0);
+  min-height: 48px;
+  display: flex;
+  background: rgb(249, 250, 250);
+  outline: none;
+  -webkit-box-align: center;
+  align-items: center;
+  text-align: left;
+}
+
+.f-filterui {
+  flex: 6 1 0%;
+  height: 100%;
+  max-width: 66%;
+}
+
+.f-filterui-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.fs-content {
+  height: 100%;
+  width: calc(100% + 20px);
+  padding-right: 20px;
+  overflow-y: auto;
+}
+
+.fs-content-inner {
+  padding: 10px 7px 0px 10px;
+  display: flex;
+  flex-flow: column;
+  width: 66vw;
+}

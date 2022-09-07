@@ -1,0 +1,129 @@
+@import "../../../../assets/scss/index.scss";
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: #fff;
+  box-shadow: 1px 1px $secondary-color, -1px -1px $secondary-color;
+  z-index: 2;
+  overflow: hidden;
+  color: $primary-color;
+
+  &__item {
+    flex: 1 0 auto;
+    padding: 13px 0;
+    border-left: 1px solid $secondary-color;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+  }
+}
+
+.filters-group {
+  display: flex;
+  flex: 1 0 auto;
+  &__filter,
+  &__sort {
+    font-family: "JosefinSansSemiBold";
+    color: --color-black-64;
+    font-weight: 500;
+    font-size: 1rem;
+    font-style: normal;
+  }
+}
+
+.icon-select-arrow {
+  margin-left: 2px;
+  pointer-events: none;
+  font-size: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  background: 0 0;
+  pointer-events: none;
+}
+
+@media screen and (min-width: 641px) {
+  .filters-group {
+    flex: none;
+  }
+  .toolbar__item {
+    padding: 18px 0;
+  }
+  .filters-group .toolbar__item {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  .toolbar,
+  .filters-group {
+    flex-direction: row-reverse;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .toolbar__item:first-child {
+    border-left: none;
+  }
+}
+
+//Grid View
+
+.grid-layout {
+  flex: none;
+  width: 95px;
+  line-height: 1;
+  cursor: initial;
+}
+
+.layout-type.is-active {
+  opacity: 1;
+}
+
+.layout-type {
+  margin: 0 6px;
+  opacity: 0.2;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.layout-type svg {
+  width: 18px;
+  height: 18px;
+}
+.icon {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  // fill: #939393 !important;
+  vertical-align: middle;
+  strokewidth: 1px;
+  background: 0 0;
+  pointer-events: none;
+}
+
+@media screen and (min-width: 641px) {
+  .grid-Layout__mobile {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .grid-Layout__desktop {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .grid-layout {
+    border-left: none;
+    width: 115px;
+    border-right: 1px solid #e7e7e7;
+    white-space: nowrap;
+  }
+}
+
+// @media screen and (min-width: 1024px) {
+//   .filters-group__filter {
+//     display: none;
+//   }
+// }

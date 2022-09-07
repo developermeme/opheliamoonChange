@@ -1,0 +1,57 @@
+.account-nav-content ul,
+.account-nav-content ul li,
+.account-nav-content ul li a,
+.account-nav-content ul li strong {
+  // border: 0;
+  box-sizing: border-box;
+  color: inherit;
+  display: block;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  text-align: left;
+  color: #000;
+  font-family: "JosefinSansSemiBold";
+}
+
+.nav .item {
+  border-bottom: solid 1px #ddd;
+  color: black;
+  line-height: 20px;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+nav .item:last-child {
+  border-bottom: none;
+}
+
+.logout-button {
+  width: 100%;
+  font-family: "JosefinSansSemiBold";
+}
+
+.sidemenu-icon {
+  float: left;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 23px;
+}
+
+i {
+  display: inline-block;
+}
+
+@media (min-width: 700px) and (max-width: 800px) {
+  .sidemenu-icon {
+    width: 15px;
+    height: 15px;
+    margin: 0 10px;
+  }
+  .sidebar-main {
+    font-size: 12px;
+  }
+}

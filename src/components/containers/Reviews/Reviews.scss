@@ -1,0 +1,15 @@
+.Review__Container {
+  margin: 2rem 1rem;
+
+  .Review__Collection {
+    margin-bottom: 15px;
+  }
+}
+
+.Review__Empty {
+  text-align: center;
+  margin-bottom: 20px;
+  > * {
+    margin-bottom: 20px !important;
+  }
+}

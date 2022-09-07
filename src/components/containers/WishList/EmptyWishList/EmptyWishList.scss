@@ -1,0 +1,62 @@
+.wishlist-wrapper {
+  padding-left: 32px;
+  display: inline-block;
+  width: 100%;
+  min-height: 65vh;
+  font-family: "JosefinSansSemiBold";
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 1024px) {
+  .wishlist-wrapper {
+    padding-left: unset;
+  }
+}
+
+.modal-empty-wishlist {
+  text-align: center;
+  width: 100%;
+  padding-top: 100px;
+  padding: 75px 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .modal-empty-wishlist {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .modal-empty-wishlist {
+    width: 100%;
+  }
+}
+
+.empty-text {
+  line-height: 28px;
+  letter-spacing: 0.03em;
+}
+
+.second-text {
+  font-family: "JosefinSansRegular";
+  color: #707070;
+  padding-top: 3px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.shop-emt-btn {
+  border: none;
+  outline: none;
+  margin-top: 20px;
+}
+
+.productsNotFoundCard-image {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}

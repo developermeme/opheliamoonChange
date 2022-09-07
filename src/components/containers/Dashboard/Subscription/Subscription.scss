@@ -1,0 +1,83 @@
+.sub-subhead {
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: "JosefinSansSemiBold";
+}
+
+.sub-subhead a {
+  text-decoration: underline;
+  color: #c70c0c;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.btn-group {
+  position: relative;
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.btn-wrapper {
+  margin: 3px 8px;
+}
+
+.btn-element {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.375rem 0.75rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+
+.btn-text {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.Payment-container {
+  margin: 20px auto;
+}
+
+.RazarPayButton {
+  border-radius: 5px;
+  // color: black;
+  font-weight: 500;
+  font-family: "JosefinSansSemiBold";
+}
+
+@media screen and (max-width: 300px) {
+  .form-group {
+    margin-bottom: 0;
+    margin-top: 1rem;
+  }
+  .btn-group {
+    display: flex;
+    flex-flow: column;
+  }
+  .btn-element {
+    margin-bottom: 10px;
+  }
+  .RazarPayButton {
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .Payment-container > * {
+    min-width: 300px !important;
+  }
+}
+
+.btn-active {
+  border: 2px solid #e88e7e;
+}

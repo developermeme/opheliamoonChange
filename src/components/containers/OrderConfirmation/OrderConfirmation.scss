@@ -1,0 +1,108 @@
+@import "../../../assets/scss/index.scss";
+
+.desktop-base-container {
+  min-height: 600px;
+}
+.desktop-base-cardLayout {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.desktop-base-cardContainer {
+  width: 100%;
+  margin: 70px auto;
+  display: inline-block;
+  border: 1px solid #d4d5d9;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.desktop-base-confirmationCardContainer {
+  padding-bottom: 48px;
+}
+
+.cardComponents-base-statusCardContainer {
+  padding: 16px;
+  text-align: center;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.cardComponents-base-confirmTick {
+  fill: $primary-color;
+  width: 46px;
+  height: 46px;
+  margin-bottom: 16px;
+}
+
+.cardComponents-base-statusCardHeading {
+  color: $primary-color;
+  font-family: "JosefinSansSemiBold";
+  margin-bottom: 12px;
+}
+
+.cardComponents-base-statusCardDesc {
+  color: #282c3f;
+  font-size: 18px;
+}
+
+.inlineButtonV3-base-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+  justify-content: space-between;
+  width: 40%;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.button-base-button {
+  color: #fff;
+  font-weight: 500;
+  padding: 10px;
+  background: $primary-color;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 12px 14px;
+  min-width: 48%;
+}
+
+.inlineButtonV3-base-secondary {
+  background-color: #fff;
+  color: $primary-color;
+  border-color: $primary-color;
+}
+
+.cardComponents-base-primaryCTAButton {
+  width: 45%;
+  border-color: $primary-color;
+}
+
+@media screen and (max-width: 1023px) {
+  .desktop-base-cardLayout {
+    max-width: 100%;
+    padding: 20px;
+  }
+  .cardComponents-base-statusCardContainer {
+    max-width: 100%;
+  }
+
+  .inlineButtonV3-base-container {
+    max-width: 80%;
+    width: 100%;
+    flex-flow: column;
+  }
+
+  .cardComponents-base-primaryCTAButton {
+    width: 100%;
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,85 @@
+@mixin button($theme: null) {
+  padding: 0;
+  overflow: visible;
+  background: 0 0;
+  border: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+
+@mixin icon {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  fill: currentColor;
+  vertical-align: middle;
+  strokewidth: 1px;
+  background: 0 0;
+  pointer-events: none;
+}
+
+@mixin iconWrapper {
+  position: relative;
+  background: 0 0;
+}
+
+@mixin iconWrapperBefore {
+  position: absolute;
+  content: "";
+  top: -8px;
+  right: -12px;
+  left: -12px;
+  bottom: -8px;
+  transform: translateZ(0);
+}
+
+@mixin forminputs {
+  display: block;
+  padding: 12px 14px;
+  border-radius: 0;
+  border: 1px solid $primary-color;
+  width: 100%;
+  line-height: normal;
+  resize: none;
+  transition: border-color 0.1s ease-in-out;
+  background: 0 0;
+  outline: none;
+}
+
+@mixin formbuttons {
+  position: relative;
+  display: inline-block;
+  padding: 14px 28px;
+  line-height: normal;
+  border: 1px solid transparent;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  font-family: "AcidBold";
+  font-weight: 500;
+  font-style: normal;
+  background-color: transparent;
+  transition: color 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86),
+    border 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  z-index: 1;
+  -webkit-tap-highlight-color: initial;
+  display: block;
+  margin-top: 20px;
+}
+
+@mixin formButtonBefore {
+  position: absolute;
+  content: "";
+  display: block;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(1, 1);
+  transform-origin: left center;
+  z-index: -1;
+}

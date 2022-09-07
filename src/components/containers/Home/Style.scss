@@ -1,0 +1,32 @@
+@import "../../../assets/scss/index.scss";
+
+.Home__Section {
+  border-top: 1px solid #e7e7e7;
+  padding: 50px 0;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  .AspectRatio--tall {
+    max-height: none;
+  }
+
+  .Home__SectionHeader {
+    margin-bottom: 50px;
+    text-align: center;
+
+    .Heading {
+      color: $primary-color;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media screen and (min-width: 1008px) {
+  .Home__Section {
+    padding: 80px 0;
+  }
+
+  .Home__SectionHeader {
+    margin-bottom: 70px;
+  }
+}

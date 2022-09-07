@@ -1,0 +1,80 @@
+.Collapsible {
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+  overflow: hidden;
+
+  & + & {
+    border-top: none;
+  }
+
+  &__Plus {
+    position: absolute;
+    right: 20px;
+    top: calc(50% - (11px / 2));
+    width: 11px;
+    height: 11px;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-90deg);
+      background-color: currentColor;
+      transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    }
+
+    &::before {
+      width: 11px;
+      height: 1px;
+      opacity: 1;
+    }
+
+    &::after {
+      width: 1px;
+      height: 11px;
+    }
+  }
+
+  &__Inner {
+    display: block;
+    visibility: hidden;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out, visibility 0s ease-in-out 0.5s;
+    height: 0;
+  }
+
+  &__Content {
+    padding-bottom: 18px;
+  }
+
+  &__Button {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    text-align: left;
+    cursor: pointer;
+    background: black;
+    color: white;
+
+    &[aria-expanded="true"] {
+      .Collapsible__Plus {
+        &::after,
+        &::before {
+          transform: translate(-50%, -50%) rotate(90deg);
+        }
+
+        &::before {
+          opacity: 0;
+        }
+      }
+
+      & + .Collapsible__Inner {
+        visibility: visible;
+        transition: height 0.5s ease-in-out;
+      }
+    }
+  }
+}

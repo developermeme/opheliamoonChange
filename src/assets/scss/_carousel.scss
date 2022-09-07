@@ -1,0 +1,60 @@
+.Carousel {
+  position: relative;
+}
+.Carousel--fixed,
+.Carousel--fixed .Carousel__Cell,
+.Carousel--fixed .flickity-viewport {
+  height: 100%;
+}
+.Carousel:not(.flickity-enabled) .Carousel__Cell:not(.is-selected) {
+  display: none;
+}
+.Carousel__Cell {
+  display: block;
+  width: 100%;
+}
+.js .Carousel--fadeIn .flickity-slider {
+  transform: none !important;
+}
+.js .Carousel--fadeIn .Carousel__Cell {
+  left: 0 !important;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+.js .Carousel--fadeIn .Carousel__Cell.is-selected {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+}
+.Carousel--insideDots .flickity-page-dots {
+  position: absolute;
+  width: auto;
+  margin: 0;
+  bottom: 24px;
+  left: 20px;
+}
+.Carousel--insideDots .flickity-page-dots .dot {
+  border-color: currentColor;
+}
+.Carousel--insideDots .flickity-page-dots .dot.is-selected {
+  background: currentColor;
+}
+.Carousel--insideDots .flickity-prev-next-button {
+  bottom: -25px;
+  z-index: 1;
+}
+.Carousel--insideDots .flickity-prev-next-button.next {
+  right: 25px;
+}
+.Carousel--insideDots .flickity-prev-next-button.previous {
+  right: 75px;
+  margin-right: 15px;
+}
+@media screen and (min-width: 1008px) {
+  .Carousel--insideDots .flickity-page-dots {
+    bottom: 28px;
+    right: 24px;
+    left: auto;
+  }
+}

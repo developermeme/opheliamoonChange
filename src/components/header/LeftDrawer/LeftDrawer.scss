@@ -1,0 +1,161 @@
+// Filter Drawer
+@import "../../../assets/scss/index.scss";
+
+.menu-drawer-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: calc(100% - 60px);
+  max-height: calc(100% - 50px);
+  font-family: "JosefinSansRegular";
+  color: $primary-color;
+}
+
+.menu-drawer-main {
+  flex: 1 1 auto;
+  //   margin: 20px;
+}
+
+[data-scrollable] {
+  overflow: auto;
+}
+
+@media screen and (min-width: 641px) {
+  .list-header {
+    margin: 20px 0;
+  }
+  .list-container {
+    padding: 0 20px;
+  }
+  .heading {
+    font-size: 24px;
+  }
+}
+
+.menu-drawer-footer {
+  flex: none;
+  box-shadow: 0 -1px $secondary-color;
+  padding: 10px;
+  background-color: $background-color;
+}
+
+.menu-social {
+  flex: 1 0 auto;
+  margin: 0;
+  padding: 6px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 34px);
+  justify-content: space-evenly;
+  text-align: center;
+  color: $primary-color;
+}
+
+.user-account {
+  display: flex;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  justify-content: center;
+  flex-flow: column;
+  padding: 16px;
+  box-shadow: 0 -1px $secondary-color inset;
+  font-family: "JosefinSansRegular";
+}
+
+.user-account-no {
+  margin: 13px 0px 0px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu-linklist {
+  margin: 20px 0 0;
+}
+
+.link-category {
+  position: relative;
+  overflow: hidden;
+  height: 50px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding: 10px 20px;
+  letter-spacing: 0.5px;
+}
+
+.link-category .icon-arrow {
+  font-size: 0.85rem;
+  line-height: 1;
+  fill: $primary-color;
+}
+
+.inner-submenu {
+  margin-left: 60px;
+  list-style: disc;
+}
+
+.inner-submenu li {
+  border-bottom: 0;
+  padding: 10px 0;
+  list-style: disc;
+}
+
+.inner-submenu li:hover {
+  color: black;
+}
+
+.divider {
+  margin: 10px 0;
+  border-top: 1px solid $secondary-color;
+}
+
+.sidenav li {
+  float: none;
+  line-height: 48px;
+}
+
+.waves-effect {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  user-select: none;
+  vertical-align: middle;
+  z-index: 1;
+  transition: 0.3s ease-out;
+}
+
+.sidenav li > a {
+  color: rgba(0, 0, 0, 0.87);
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  height: 48px;
+  line-height: 48px;
+  padding: 0 32px;
+}
+
+.sidenav li > a {
+  padding: 0 22px;
+  font-weight: 400;
+}
+
+.sidenav li a svg {
+  vertical-align: middle;
+  margin-right: 20px;
+  line-height: 48px;
+}
+
+.sidenav .subheader {
+  cursor: auto;
+  pointer-events: none;
+  color: $primary-color;
+  font-weight: 500;
+  line-height: 48px;
+  padding-left: 28px;
+  text-transform: uppercase;
+}

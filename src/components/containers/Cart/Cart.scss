@@ -1,0 +1,92 @@
+@import "../../../assets/scss/index.scss";
+
+.ccolumns {
+  display: flex;
+  flex-flow: column;
+}
+
+.ccolumns .ccolumn.main {
+  max-width: 100%;
+  font-family: "JosefinSansRegular";
+}
+
+.cart-container {
+  padding-top: 40px;
+  max-width: 1330px;
+  margin: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.cart-page-title {
+  display: flex;
+  align-items: flex-end;
+  font-family: "JosefinSansSemiBold";
+  color: $primary-color;
+}
+
+.cart-count {
+  margin-left: 10px;
+  font-family: "JosefinSansSemiBold";
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .cart-container {
+    padding-top: 20px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 980px) and (min-width: 768px) {
+  .cart-page-title {
+    display: block;
+  }
+}
+
+@media (max-width: 980px) and (min-width: 768px) {
+  .cart-page-title {
+    display: block;
+  }
+}
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+th,
+td,
+tr {
+  padding: 10px;
+  text-align: left;
+}
+tbody td {
+  border: 0;
+}
+
+@media (max-width: 767px) {
+  th,
+  td,
+  tr {
+    position: relative;
+  }
+}
+
+@media (max-width: 767px) {
+  th,
+  td,
+  tr {
+    padding: 0;
+    text-align: left;
+  }
+}
+
+[data-scrollable] {
+  overflow: auto;
+}

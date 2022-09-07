@@ -1,0 +1,33 @@
+.ReviewForm {
+  margin: 3rem auto !important;
+  max-width: 1000px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+
+  &--form {
+    padding: 2rem;
+  }
+
+  &--rating {
+    margin-top: 20px;
+  }
+
+  .h1-head {
+    margin-bottom: 10px;
+  }
+
+  .Update__Review {
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 20px;
+    line-height: 20px;
+    text-transform: capitalize;
+  }
+
+  @media screen and (max-width: 600px) {
+    &--form {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}

@@ -1,0 +1,248 @@
+.checkout-main {
+  width: 100%;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: "JosefinSansRegular";
+  color: #000 !important;
+  margin-top: 20px;
+  max-width: 1440px;
+  padding-bottom: 80px;
+}
+
+.checkout-main-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.checkout-section {
+  margin-top: 30px;
+}
+
+.col-md-4,
+.col-md-8,
+.col-sm-12 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 576px) {
+  .col-sm-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+}
+
+.omc-section {
+  float: left;
+  width: 100%;
+}
+
+.add_old_address {
+  border: 1px solid #c70c0c;
+  float: left;
+  margin-right: 5%;
+  border-radius: 2px;
+  box-shadow: 0 0 4px #eee;
+  padding: 25px 35px 20px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.mb-4,
+.my-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+.add_old_address h3 {
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 10px;
+  font-family: "JosefinSansSemiBold";
+}
+
+.add_old_address p {
+  text-transform: capitalize;
+  margin: 0;
+  line-height: 25px;
+}
+
+.edit-button {
+  position: absolute;
+  right: 20px;
+  bottom: 1rem;
+  background-color: transparent;
+  border: 1px solid #ddd;
+  padding: 6px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.payment-method {
+  float: left;
+  margin-right: 5%;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  box-shadow: 0 0 4px #eee;
+  padding: 25px 35px 25px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.payment-method.active:before {
+  background: #c70c0c;
+  content: "";
+  display: block !important;
+  height: 60px;
+  width: 60px;
+  transform: rotate(45deg);
+  left: -30px;
+  top: -30px;
+  position: absolute;
+}
+
+.payment-method-title {
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  background: #fff;
+  padding: 24px 22px;
+  background-repeat: no-repeat;
+  background-position: 20px;
+  position: relative;
+  background-image: url(../../../assets/image/Payment.png);
+  background-size: 60px;
+}
+
+.payment-method.active .payment-method-title,
+.payment-method-title:hover {
+  border: 2px solid #c70c0c;
+}
+
+.paymentInput {
+  opacity: 0;
+  min-height: 0;
+}
+
+.payment-label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: inherit;
+  margin: 0;
+  line-height: 24px;
+  padding-left: 105px;
+  cursor: pointer;
+  text-align: left;
+  font-weight: 500;
+  vertical-align: top;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.payment-method-button {
+  display: block;
+}
+
+.payment-method-button .checkout {
+  background: #c70c0c;
+  border-color: #c70c0c;
+  color: #fff;
+  border: none;
+  height: 38px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0 18px;
+  line-height: 38px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+// SideBar
+.omc-sidebar {
+  margin-top: 20px;
+  background: #fff;
+  box-shadow: 0 2px 15px 0px rgba(0, 0, 0, 0.1);
+  padding: 40px 30px;
+  margin-bottom: 30px;
+  max-height: 640px;
+}
+
+.paypal-buttons {
+  max-width: 290px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.stripe-buttons {
+  max-width: 290px;
+  margin-top: 20px;
+  min-width: 100px;
+}
+
+.status-text {
+  color: #c70c0c;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .checkout-main {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 0px;
+  }
+  .add_old_address {
+    padding: 10px;
+  }
+  .payment-method {
+    padding: 20px;
+  }
+
+  .payment-method-title {
+    padding: 24px 10px;
+    background-position: 10px;
+    background-size: 50px;
+  }
+
+  .payment-label {
+    padding-left: 70px;
+  }
+  .payment-method-button {
+    display: none;
+  }
+
+  .omc-sidebar {
+    margin-top: 0px;
+    background: #fff;
+    box-shadow: none;
+    padding: 10px;
+  }
+  .paypal-buttons {
+    max-width: auto;
+  }
+}

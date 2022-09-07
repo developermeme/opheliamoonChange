@@ -1,0 +1,63 @@
+@import "../../../assets/scss/index.scss";
+
+.dropdown {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #545454;
+  background: #fff;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.dropdown__label {
+  position: absolute;
+  z-index: 1;
+  user-select: none;
+  -webkit-transform: none;
+  transform: none;
+  opacity: 1;
+  padding: 10px 14px;
+  display: block;
+  pointer-events: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  text-align: left;
+}
+
+.dropdown__input {
+  // padding-top: 1.5em;
+  // padding-bottom: .3571428571em;
+  padding: 10px 14px;
+  border-radius: 0;
+  border: 1px solid $primary-color;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  background-color: #fff;
+  color: #333;
+  // min-width: 400px;
+  white-space: nowrap;
+  background-clip: padding-box;
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+
+  word-break: normal;
+  line-height: inherit;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+option {
+  background-color: #fff;
+  color: #000;
+}

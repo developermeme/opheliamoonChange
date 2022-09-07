@@ -1,0 +1,109 @@
+@import "../../../../assets/scss/index.scss";
+
+.AddressForm__container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin: 80px auto;
+  padding: 0 24px;
+}
+
+.AddressForm__header {
+  text-align: center;
+  margin: 30px 0 30px 0;
+  font-family: "JosefinSansRegular";
+}
+
+.AddressForm__Form {
+  display: grid;
+  padding: 0 20px;
+  // grid-gap: 2rem;
+}
+
+.AddressForm__footer {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  // align-items: center;
+  margin: 0 auto;
+  align-content: center;
+}
+
+.AddressForm__footer > * {
+  margin-bottom: 20px;
+}
+
+.add-button-full {
+  // padding: 10px;
+  margin-right: 5px;
+}
+
+// Header And Footer
+
+@media screen and (min-width: 641px) {
+  .add-button-full {
+    min-width: 150px;
+  }
+}
+
+.fields--2 {
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .AddressForm__container {
+    margin: 0px auto;
+  }
+
+  .AddressForm__Form {
+    grid-gap: 0;
+  }
+  .fields--2 {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+  .AddressForm__item {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+  .AddressForm__container {
+    margin: 40px auto;
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .AddressForm__container {
+    padding: 0 50px;
+  }
+  .AddressForm__input {
+    min-width: 350px;
+  }
+  .AddressForm__Form {
+    margin: 5px 50px 0 50px;
+  }
+
+  .AddressForm__header {
+    margin-top: 5px;
+  }
+
+  .AddressForm__footer {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .AddressForm__container {
+    padding: 0 80px;
+  }
+  .AddressForm__Form {
+    margin: 5px auto 0 auto;
+    min-width: 800px !important;
+  }
+  .AddressForm__header {
+    margin-top: 5px;
+  }
+}

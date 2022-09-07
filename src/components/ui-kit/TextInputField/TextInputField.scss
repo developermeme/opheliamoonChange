@@ -1,0 +1,18 @@
+@import "../../../assets/scss/index.scss";
+
+.Form__Item {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.Form__Input {
+  @include textInput;
+}
+
+.Form__FloatingLabel {
+  @include floatingLabel;
+}
+
+.Form__Input:not(:placeholder-shown) ~ .Form__FloatingLabel {
+  @include onFloat;
+}

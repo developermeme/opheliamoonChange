@@ -1,0 +1,10 @@
+@mixin heading($theme: null) {
+  font-family: "AcidBold";
+  font-size: 22px;
+  font-weight: 500;
+  font-style: normal;
+  color: $theme;
+  transition: color 0.2s ease-in-out;
+}
+
+$h4: 16px;

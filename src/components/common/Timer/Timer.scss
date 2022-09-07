@@ -1,0 +1,20 @@
+.counterHeaderTime {
+  text-align: center;
+  margin: 10px auto;
+}
+
+.clockPart {
+  // border-radius: 2px;
+  // background-color: $primary-color;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  margin: 10px 4px;
+  color: white;
+  // background: linear-gradient(to bottom, $primary-color 0, #f9665e 100%);
+  background: black;
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+  line-height: 30px;
+}

@@ -1,0 +1,78 @@
+.policy {
+  // border: 1px solid #e1e1e1;
+  // box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.15);
+  margin: auto;
+  overflow: hidden;
+  background: #fff;
+  width: 100%;
+  overflow-x: hidden;
+  line-height: 28px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.policy-content {
+  padding: 20px 40px 40px;
+}
+
+.policy p {
+  line-height: 28px;
+}
+
+.policy strong {
+  font-weight: bold;
+}
+
+.policy-head {
+  line-height: 28px;
+  font-weight: 500;
+  color: #3f414d;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 50px 0;
+}
+
+.policy-subhead {
+  line-height: 28px;
+  font-weight: bold;
+  // font-family: "JosefinSansSemiBold";
+  margin: 20px 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.policy-text {
+  margin: 20px 0;
+  line-height: 28px;
+}
+
+.policy ul {
+  margin-bottom: 20px;
+  padding-left: 40px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.policy li {
+  margin-bottom: 20px;
+  list-style: disc;
+}
+
+@media screen and (max-width: 400px) {
+  .policy ul {
+    padding-left: 20px;
+  }
+}
+
+// About Us
+
+@media screen and (max-width: 1023px) {
+  .policy-content {
+    padding: 20px 20px 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .policy-head {
+    margin: 30px 0;
+  }
+}

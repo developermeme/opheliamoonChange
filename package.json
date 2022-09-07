@@ -1,0 +1,82 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
+    "@paypal/paypal-js": "^4.0.6",
+    "@paypal/react-paypal-js": "^7.2.0",
+    "@reduxjs/toolkit": "^1.5.1",
+    "@rumess/react-flip-countdown": "^1.2.3",
+    "@stripe/react-stripe-js": "^1.7.1",
+    "@stripe/stripe-js": "^1.27.0",
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "@types/qrcode.react": "^1.0.2",
+    "@types/react-helmet": "^6.1.4",
+    "@types/react-redux": "^7.1.16",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/redux-saga": "^0.10.5",
+    "axios": "^0.21.1",
+    "bootstrap": "^5.0.2",
+    "cashfree-dropjs": "^1.1.4",
+    "classnames": "^2.3.1",
+    "express": "^4.17.3",
+    "install": "^0.13.0",
+    "node-sass": "^6.0.1",
+    "npm": "^8.3.0",
+    "photoswipe": "^4.1.3",
+    "qrcode.react": "^1.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-images-uploading": "^3.1.6",
+    "react-medium-image-zoom": "^4.4.3",
+    "react-photoswipe-gallery": "^1.3.6",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "4.0.3",
+    "react-slick": "^0.29.0",
+    "react-star-ratings": "^2.3.0",
+    "react-stripe-checkout": "^2.6.3",
+    "react-toastify": "^7.0.4",
+    "redux": "^4.1.0",
+    "redux-thunk": "^2.3.0",
+    "slick-carousel": "^1.8.1",
+    "typescript": "^4.2.4",
+    "web-vitals": "^1.1.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/material-ui-phone-number": "^2.2.0",
+    "@types/react": "^17.0.6",
+    "@types/react-dom": "^17.0.8",
+    "@types/react-slick": "^0.23.8",
+    "@types/react-star-ratings": "^2.3.0"
+  }
+}

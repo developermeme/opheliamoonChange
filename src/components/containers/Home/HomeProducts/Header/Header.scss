@@ -1,0 +1,24 @@
+.desktop-banner-img {
+  margin-bottom: -5 rem;
+  margin-top: 1 rem;
+  width: 100%;
+  display: none;
+}
+
+.mobile-banner-img {
+  margin-top: 5 rem;
+  margin-bottom: -5 rem;
+  width: 100%;
+}
+
+@media (min-width: 1008px) {
+  .desktop-banner-img {
+    display: block;
+  }
+}
+
+@media (min-width: 1008px) {
+  .mobile-banner-img {
+    display: none;
+  }
+}

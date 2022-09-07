@@ -1,0 +1,96 @@
+@import "../../../../assets/scss/index.scss";
+
+.addressAccordian-addressAccordian {
+  margin-bottom: 10px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+  background-color: white;
+  margin-bottom: 6px;
+  color: black;
+  display: block;
+  font-family: "JosefinSansRegular";
+}
+
+.addressAccordian-nameComponent {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.addressAccordian-name {
+  font-family: "JosefinSansSemiBold";
+}
+
+.addressAccordian-address {
+  width: 100%;
+  display: inline-block;
+  padding: 12px;
+  word-break: break-word;
+}
+
+//Buttons
+
+.addressAccordian-buttons {
+  width: 100%;
+  display: block;
+  color: $primary-color;
+  border-top: 1px solid #eaeaec;
+  position: relative;
+}
+
+.addressAccordian-buttonDivider {
+  border-left: 1px solid #eaeaec;
+  width: 1px;
+  height: 30px;
+  position: absolute;
+  left: 50%;
+  top: 8px;
+}
+
+.addressAccordian-button {
+  display: inline-block;
+  cursor: pointer;
+  width: 50%;
+  text-transform: uppercase;
+  padding: 14px 14px;
+  text-align: center;
+  font-family: "JosefinSansSemiBold";
+}
+
+.Add-New-button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  font-family: "JosefinSansSemiBold";
+  font-size: var(--font-size-12);
+}
+
+.addressContent {
+  color: $text-dark;
+  font-size: var(--font-size-13);
+}
+
+.empty-text {
+  margin: 20px 0;
+  color: black;
+  font-weight: 500;
+}
+
+.pull-right {
+  float: right;
+  margin-top: 5px;
+}
+
+.address-radioIcon {
+  fill: #939393;
+}
+
+.is-active {
+  fill: $primary-color;
+}
+
+@media (min-width: 780px) {
+  .addressAccordian-addressAccordian {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+    margin-bottom: 15px;
+  }
+}
